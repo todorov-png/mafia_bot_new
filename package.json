@@ -1,0 +1,29 @@
+{
+  "name": "mafia_bot",
+  "version": "1.0.0",
+  "description": "Бот игры мафия для telegram",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "add": "git add .",
+    "commit": "git commit -m 'fix'",
+    "push": "git push heroku master",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "deploy": "git add . && git commit -m 'fix' && git push heroku master"
+  },
+  "author": "Евгений Тодоров",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "telegraf": "^3.38.0",
+    "telegraf-ratelimit": "^2.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
+}
